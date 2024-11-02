@@ -28,7 +28,7 @@ function updateStatsDisplay(stats) {
 async function startSorting() {
   // Prevent starting a new sort if one is already in progress
   if (abortController) {
-    alert("A sort is already in progress. Please wait for it to finish or abort.");
+    abortController.abort()
     return; // Exit if sorting is in progress
   }
   
