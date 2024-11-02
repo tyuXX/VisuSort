@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+}
+#arrayContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-top: 50px;
+}
+.bar {
+  width: 20px;
+  background-color: #3a86ff;
+  margin: 0 2px;
+  transition: height 0.3s;
+}
+.bar.compare {
+  background-color: #ff006e;
+}
+.bar.sorted {
+  background-color: #3a86ff;
+  opacity: 0.6;
+}
+#startButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
